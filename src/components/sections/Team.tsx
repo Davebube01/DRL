@@ -50,7 +50,7 @@ const teamMembers = [
   },
   {
     name: "Kingsley Uchendu",
-    role: "Operations Manager",
+    role: "Operations Director",
     bio: "Kingsley Uchendu serves as the Operations Manager of Diversity Resources Limited, bringing with him extensive experience in business management, corporate sales, telecommunications, and financial services. He holds a Bachelor's Degree in Microbiology from the University of Nigeria, Nsukka (UNN), equipping him with strong analytical, scientific, and operational problem-solving skills.\n\nHis background in corporate account management, operations leadership, and strategic business development positions him as a key driver of operational efficiency, growth strategy, and performance management within Diversity Resources Limited.\n\nUnder his leadership, the company continues to strengthen its integrated farming operations, value chain development, and service delivery standards.",
     image: "/team/Operations.jpeg",
   },

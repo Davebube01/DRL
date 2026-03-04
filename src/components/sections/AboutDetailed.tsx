@@ -567,7 +567,7 @@ export default function AboutDetailed() {
               Our Operations
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 leading-tight">
-              Explore DRL&apos;s{" "}
+              Explore our{" "}
               <em className="not-italic text-emerald-600">
                 Agricultural Solutions
               </em>
