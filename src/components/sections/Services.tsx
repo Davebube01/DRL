@@ -4,6 +4,11 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
+import cattle from "@/assets/cattle.jpg"
+import crop from "@/assets/crops1.jpg"
+import process4 from "@/assets/processing4.jpg"
+import process3 from "@/assets/processing3.jpg"
+import machine from "@/assets/machine1.jpg"
 
 /* ─────────────────────────────── animation helpers ─────────────────────── */
 const fadeUp = {
@@ -50,8 +55,9 @@ const featured = [
       "Animal feed formulation and supply",
       "Veterinary support and herd health management",
     ],
-    image:
-      "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=800&q=80",
+    // image:
+    //   "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=800&q=80",
+    image: cattle.src
   },
   {
     tag: "Crop Production",
@@ -66,8 +72,9 @@ const featured = [
       "Irrigation farming systems",
       "Contract farming partnerships",
     ],
-    image:
-      "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80",
+    // image:
+    //   "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80",
+    image: machine.src
   },
 ];
 
@@ -84,8 +91,9 @@ const serviceCards = [
       "Bulk processing for distributors",
       "Private label food production",
     ],
-    image:
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+    // image:
+    //   "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+    image: process4.src
   },
   {
     number: "04",
@@ -99,8 +107,9 @@ const serviceCards = [
       "Ranch setup and farm management advisory",
       "Farm equipment sourcing support",
     ],
-    image:
-      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
+    // image:
+    //   "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
+    image: process3.src
   },
   {
     number: "05",
@@ -207,7 +216,7 @@ export default function Services() {
       {/* ═══════════════════════════════════════════════════════════════
           2. FEATURED SERVICES — text-left + image-right rows
       ═══════════════════════════════════════════════════════════════ */}
-      <section ref={featuredSection.ref} className="py-20 sm:py-24 bg-white">
+      <section ref={featuredSection.ref} className="py-20 sm:py-24 bg-emerald-50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -261,13 +270,7 @@ export default function Services() {
                     ))}
                   </ul>
 
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center gap-2 text-emerald-700 font-semibold text-sm hover:text-emerald-900 transition-colors group"
-                  >
-                    Enquire Now
-                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                  </Link>
+                  
                 </div>
 
                 {/* right — image */}
@@ -288,7 +291,7 @@ export default function Services() {
       {/* ═══════════════════════════════════════════════════════════════
           3. SERVICE CARDS GRID
       ═══════════════════════════════════════════════════════════════ */}
-      <section ref={cardsSection.ref} className="py-20 sm:py-24 bg-stone-50">
+      <section ref={cardsSection.ref} className="py-20 sm:py-24 bg-white">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -355,13 +358,7 @@ export default function Services() {
                     ))}
                   </ul>
 
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center gap-1.5 text-emerald-700 font-semibold text-sm hover:text-emerald-900 transition-colors group/link"
-                  >
-                    Learn More
-                    <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                  </Link>
+                  
                 </div>
               </motion.div>
             ))}

@@ -4,6 +4,11 @@ import { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import cattle from "@/assets/cattle.jpg"
+import crop from "@/assets/crop4.jpg"
+import process4 from "@/assets/processing4.jpg"
+import process3 from "@/assets/processing3.jpg"
+import machine from "@/assets/machine1.jpg"
 
 const services = [
   {
@@ -11,28 +16,28 @@ const services = [
     title: "Livestock & Animal Husbandry",
     subtitle: "Cattle · Dairy · Poultry · Goats",
     image:
-      "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=800&q=80",
+      cattle.src,
   },
   {
     number: "02",
     title: "Crop Production",
     subtitle: "Vegetables · Grains · Cash Crops · Irrigation",
     image:
-      "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80",
+      crop.src,
   },
   {
     number: "03",
     title: "Food Processing & Value Addition",
     subtitle: "Processing · Packaging · Private Label",
     image:
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+      process4.src,
   },
   {
     number: "04",
     title: "Agro-Allied & Support Services",
     subtitle: "Inputs · Consultancy · Equipment",
     image:
-      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
+      machine.src,
   },
   {
     number: "05",
@@ -74,7 +79,7 @@ export default function ServicesScroll() {
     <section
       id="services-preview"
       ref={sectionRef}
-      className="relative bg-white overflow-hidden py-20 sm:py-28"
+      className="relative bg-emerald-50 overflow-hidden py-20 sm:py-28"
     >
       {/* ── Header ─────────────────────────────────────────────── */}
       <div className="container-custom mb-10 flex flex-col sm:flex-row sm:items-end justify-between gap-6">

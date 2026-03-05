@@ -53,10 +53,10 @@ export default function Features() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-50 rounded-full blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-stone-50 rounded-full blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-50 rounded-full blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2 pointer-events-none" />
 
       <div className="container-custom relative z-10">
         <motion.div

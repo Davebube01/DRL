@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
+import bg from "@/assets/bg.jpg";
 import { Leaf, ChevronDown, ArrowRight } from "lucide-react";
 
 // Floating leaf component
@@ -60,15 +61,10 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Parallax Background */}
-      <motion.div
-        className="absolute inset-0 z-0"
-        style={{ y: backgroundY }}
-      >
+      <motion.div className="absolute inset-0 z-0" style={{ y: backgroundY }}>
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('https://picsum.photos/id/1015/1920/1080')`,
-          }}
+          style={{ backgroundImage: `url(${bg.src})` }}
         />
         {/* Dark overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />

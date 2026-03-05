@@ -49,11 +49,23 @@ const teamMembers = [
     image: "/team/MD.jpeg",
   },
   {
-    name: "Kingsley Uchendu",
-    role: "Operations Director",
-    bio: "Kingsley Uchendu serves as the Operations Manager of Diversity Resources Limited, bringing with him extensive experience in business management, corporate sales, telecommunications, and financial services. He holds a Bachelor's Degree in Microbiology from the University of Nigeria, Nsukka (UNN), equipping him with strong analytical, scientific, and operational problem-solving skills.\n\nHis background in corporate account management, operations leadership, and strategic business development positions him as a key driver of operational efficiency, growth strategy, and performance management within Diversity Resources Limited.\n\nUnder his leadership, the company continues to strengthen its integrated farming operations, value chain development, and service delivery standards.",
-    image: "/team/Operations.jpeg",
-  },
+  name: "Kingsley Uchendu",
+  role: "Operations Director",
+  bio: `Kingsley Uchendu serves as the Operations Director of Diversity Resources Limited, bringing with him extensive experience in business management, corporate sales, telecommunications, and financial services.
+
+He holds a Bachelor’s Degree in Microbiology from the University of Nigeria, Nsukka (UNN), equipping him with strong analytical, scientific, and operational problem-solving skills that support the company’s agricultural and agro-processing operations.
+
+Before joining Diversity Resources Limited, he built a solid professional career across multiple industries:
+• Integrated Microfinance Bank – Sales Executive
+• Multi-Links Telecommunications Limited – Corporate Accounts Manager
+• 9mobile Telecommunications Limited (Etisalat) – Mobile Experience Centre Manager
+• ZEC Industry Limited – General Manager
+
+His background in corporate account management, operations leadership, and strategic business development positions him as a key driver of operational efficiency, growth strategy, and performance management within Diversity Resources Limited.
+
+Under his leadership, the company continues to strengthen its integrated farming operations, value chain development, and service delivery standards.`,
+  image: "/team/Operations.jpeg",
+},
   {
     name: "Raymond Elemnwoke",
     role: "Finance Director",

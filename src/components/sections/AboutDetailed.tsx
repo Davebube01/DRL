@@ -14,6 +14,9 @@ import {
   Leaf,
 } from "lucide-react";
 import Link from "next/link";
+import crops from "@/assets/crops2.jpg"
+import cattle from "@/assets/cattle2.jpg"
+import processing from "@/assets/processing4.jpg"
 
 /* ─────────────────────────────── helpers ─────────────────────────── */
 const fadeUp = {
@@ -109,7 +112,7 @@ const operations = [
     label: "Livestock Management",
     sub: "Cattle · Dairy · Poultry",
     image:
-      "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=800&q=80",
+      cattle.src,
     span: "col-span-2 row-span-2",
   },
   {
@@ -259,7 +262,7 @@ export default function AboutDetailed() {
       {/* ═══════════════════════════════════════════════════════════════
           3. STORY — two-column
       ═══════════════════════════════════════════════════════════════ */}
-      <section id="story" ref={story.ref} className="py-24 sm:py-32 bg-white">
+      <section id="story" ref={story.ref} className="py-24 sm:py-32 bg-emerald-50">
         <div className="container-custom grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* left — image */}
           <motion.div
@@ -269,7 +272,8 @@ export default function AboutDetailed() {
             className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-2xl order-2 lg:order-1"
           >
             <img
-              src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c8b91?w=800&q=80"
+              // src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c8b91?w=800&q=80"
+              src={crops.src}
               alt="DRL farm operations"
               className="w-full h-full object-cover"
             />
@@ -354,7 +358,7 @@ export default function AboutDetailed() {
       {/* ═══════════════════════════════════════════════════════════════
           4. VISION & MISSION
       ═══════════════════════════════════════════════════════════════ */}
-      <section ref={visionMission.ref} className="py-20 sm:py-24 bg-stone-50">
+      <section ref={visionMission.ref} className="py-20 sm:py-24 bg-emerald-50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -425,7 +429,7 @@ export default function AboutDetailed() {
       {/* ═══════════════════════════════════════════════════════════════
           5. BUSINESS PILLARS — four service areas
       ═══════════════════════════════════════════════════════════════ */}
-      <section ref={pillarsSection.ref} className="py-24 sm:py-32 bg-white">
+      <section ref={pillarsSection.ref} className="py-24 sm:py-32 bg-white-50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -587,7 +591,7 @@ export default function AboutDetailed() {
               className="sm:col-span-2 sm:row-span-2 relative rounded-3xl overflow-hidden group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=900&q=80"
+                src={cattle.src}
                 alt="Livestock Management"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -632,7 +636,7 @@ export default function AboutDetailed() {
               className="relative rounded-3xl overflow-hidden group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"
+                src={processing.src}
                 alt="Food Processing"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />

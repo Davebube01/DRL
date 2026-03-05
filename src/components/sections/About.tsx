@@ -5,6 +5,8 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Eye, Target, Sprout, Award } from "lucide-react";
+import processing from "@/assets/processing2.jpg"
+
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
@@ -28,7 +30,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="section-padding bg-stone-50 relative overflow-hidden"
+      className="section-padding bg-emerald-50  relative overflow-hidden"
     >
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-100/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
@@ -101,7 +103,7 @@ export default function About() {
           <motion.div variants={fadeInUp} className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://picsum.photos/id/110/800/600"
+                src={processing.src}
                 alt="Agricultural landscape"
                 className="w-full h-auto object-cover"
               />

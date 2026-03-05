@@ -140,7 +140,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="section-padding bg-white relative overflow-hidden">
+    <section id="contact" className="section-padding bg-emerald-50 relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-50 rounded-full blur-3xl translate-x-1/3" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-stone-100 rounded-full blur-3xl -translate-x-1/3" />
